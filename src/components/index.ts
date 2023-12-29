@@ -6,11 +6,11 @@ const allGlobalComponent = { SvgIcon, Pagination }
 
 // 对外暴露插件对象
 export default {
-    // 必须叫做install
-    install(app) {
-        // 注册项目全局组件
-        Object.keys(allGlobalComponent).forEach(key => {
-            app.component(key)
-        })
-    }
+  // 必须叫做install
+  install(app) {
+    // 注册项目全局组件
+    Object.keys(allGlobalComponent).forEach((key) => {
+      app.component(key)
+    })
+  },
 }

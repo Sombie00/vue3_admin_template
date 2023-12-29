@@ -6,7 +6,7 @@
 
 <script lang="ts" setup>
 import request from '@/utils/request'
-import { onMounted } from 'vue';
+import { onMounted } from 'vue'
 // 组件挂在完毕测试发一个请求
 onMounted(() => {
   request({
@@ -14,11 +14,10 @@ onMounted(() => {
     method: 'post',
     data: {
       username: 'admin',
-      password: '111111'
-    }
+      password: '111111',
+    },
   }).then((res) => {
-    console.log(res);
-
+    console.log(res)
   })
 })
 </script>
@@ -26,7 +25,7 @@ onMounted(() => {
 <style scoped lang="scss">
 div {
   h1 {
-    color: red
+    color: red;
   }
 }
 </style>

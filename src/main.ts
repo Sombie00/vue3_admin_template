@@ -1,7 +1,7 @@
 import { createApp } from 'vue'
 import App from '@/App.vue'
 // 引入element-plus
-import ElementPlus from "element-plus"
+import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
 
 // 配置element-plus国际化
@@ -13,7 +13,7 @@ const app = createApp(App)
 app.use(ElementPlus, { locale: zhCn })
 
 // SVG插件需要的配置代码
-import "virtual:svg-icons-register"
+import 'virtual:svg-icons-register'
 
 // 把svgicon定义为全局组件,先引入
 import SvgIcon from '@/components/SvgIcon/index.vue'
@@ -28,7 +28,5 @@ app.use(GlobalComponents)
 // 引入模板的全局样式
 import '@/styles/index.scss'
 
-
-
 // 把应用挂载
-app.mount("#app")
+app.mount('#app')
